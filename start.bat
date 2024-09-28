@@ -58,7 +58,7 @@ netsh winhttp set proxy %PROXY_SERVER%
 :: Step 4: Run mitmproxy with the Python script
 echo Starting mitmproxy with the block_anime script...
 cd /d "%ProgramFiles%\mitmproxy"
-mitmproxy -s "%~dp0block_anime.py"
+mitmproxy -s "%~dp0block.py"
 
 :: Step 5: Keep the console open after execution
 pause
